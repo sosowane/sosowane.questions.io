@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+
+a:link {
+    color: black;
+    text-align: center;
+    font-family: "Questrial";
+    font-weight:bold;
+  }
+  
+body {
+    text-align: center;
+    font-size: 2.5em;
+    width: 100%;
+    font-family: "Questrial";
+    color: rgb(57, 57, 57);
+    background-color: white
+  }
+
+button {
+    background-color:rgba(255, 217, 119, 0.872);
+    padding: 17px 32px;
+    display: inline-block;
+    font-size: .5em;
+    font-family: "Questrial";
+    margin: 1em;
+    border: none;
+    outline: none;
+  }
+  button:hover {
+    background-color: rgba(237, 152, 86, 0.872);
+    color: white;
+  }
+
+  .flex-container > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+
+header {
+    justify-content: left;
+    font-family: 'Questrial';
+  }
+
+h1 {
+    font-weight: 700;
+    font-size: 3.2em;
+    letter-spacing: 0.04em; 
+    text-align: center;
+    font-family: "Questrial";
+    margin-top: .19em;
+    margin-bottom: .12em;
+}
+h2 {
+    font-size: 500%;
+    font-weight: 700;
+    letter-spacing: 0.04em; 
+    text-align: center;
+    font-family: "Questrial";
+    margin: .5em;
+}
+
+li {
+    float: left;
+    padding-right: .1em;
+  }
+  
+li a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 1.5em;
+    overflow: hidden;
+  }
