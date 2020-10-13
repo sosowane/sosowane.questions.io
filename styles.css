@@ -43,12 +43,11 @@ button {
 
   footer,
   .push {
-    background-color: rgba(181, 181, 181, 0.762); 
     padding:1em 0; 
     color: white;
     size: 200px;
     width: 100%;
-    position: absolute;
+    position: fixed;
 
   }
 
@@ -86,6 +85,14 @@ h1 {
 }
 h2 {
     font-size: 50%;
+    font-weight: 700;
+    letter-spacing: 0.04em; 
+    text-align: center;
+    font-family: "Questrial";
+    margin: .5em;
+}
+h3 {
+    font-size: 40%;
     font-weight: 700;
     letter-spacing: 0.04em; 
     text-align: center;
