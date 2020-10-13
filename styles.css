@@ -43,11 +43,11 @@ button {
 
   footer,
   .push {
-    background-color: rgba(145, 145, 145, 0.762); 
+    background-color: rgba(181, 181, 181, 0.762); 
     padding:1em 0; 
     color: white;
     size: 200px;
-    width: 30%;
+    width: 100%;
     position: absolute;
 
   }
