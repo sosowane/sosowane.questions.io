@@ -51,8 +51,6 @@ button {
     color: white;
     size: 200px;
     width: 100%;
-    position: fixed;
-
   }
 
   * {
@@ -106,7 +104,7 @@ h3 {
 
 li {
     float: left;
-    padding-right: .1em;
+    justify-content: center;
   }
   
 li a {
