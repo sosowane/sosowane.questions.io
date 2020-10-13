@@ -39,7 +39,8 @@ button {
 
   .flex-container > div {
     background-color: #f1f1f1;
-    width: 100px;
+    width: inherit;
+    height: inherit;
     margin: 10px;
     line-height: 75px;
     font-size: 30px;
@@ -53,27 +54,10 @@ button {
     width: 100%;
   }
 
-  * {
-    font-family: "Questrial";
-    text-align: center;
-    font-size: 44px;
-  }
-  
-.grid-container {
-  display: grid;
-  grid-template-columns: 180px 180px 180px;
-  grid-template-rows: 70px 70px 70px;
-  grid-column-gap: 1.4em;
-  grid-row-gap: 1.2em;
-  justify-content: center;
-}
-.grid-container > div {
-  padding: 0em;
-}
-
 header {
     justify-content: left;
     font-family: 'Questrial';
+    overflow: hidden;
   }
 
 h1 {
