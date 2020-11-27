@@ -36,6 +36,7 @@ button {
     color: white;
     background-color: transparent;
     height: 100%;
+    padding: 0em;
     border: none;
     outline: none;
   }
@@ -80,10 +81,10 @@ button {
     background: rgb(245, 209, 62);
   }
   .cell-4 {
-    background: rgb(129, 222, 111);
+    background: rgb(132, 199, 119);
   }
   .cell-5 {
-    background: rgb(105, 228, 185);
+    background: rgb(92, 210, 169);
   }
   .cell-6 {
     background: rgb(103, 189, 220);
@@ -157,10 +158,11 @@ h3 {
       grid-gap: 10px 10px;
       grid-template-columns: 80px 80px 80px;
       grid-template-rows: 80px 80px 80px;
+      padding-right: 2em;
     }
 
     .cell {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       text-align: center;
       display: flex;
       align-items: center;
@@ -175,7 +177,7 @@ h3 {
     h1 {
       font-size: 2.2em;
       font-weight: 900;
-      letter-spacing: 0.009em; 
+      letter-spacing: 0em; 
     }
 
     body {
@@ -191,7 +193,7 @@ h3 {
     section{
       justify-content: center;
       display: inline-block;
-      margin-top: 2em; 
+      margin-top: 1.4em; 
       margin-right: 1em; 
       margin-left: 1em;
     }
