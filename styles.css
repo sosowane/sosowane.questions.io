@@ -28,6 +28,7 @@ button {
     font-family: "Questrial";
     color: white;
     background-color: transparent;
+    height: 100%;
     border: none;
     outline: none;
   }
