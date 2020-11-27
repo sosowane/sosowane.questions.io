@@ -23,13 +23,11 @@ body {
 
 button {
     background-color: none;
-    padding: 13px 32px;
-    display: inline-grid;
-    font-size: .5em;
+    display: inline-block;
+    font-size: .4em;
     font-family: "Questrial";
     color: white;
     background-color: transparent;
-    margin: 1em;
     border: none;
     outline: none;
   }
@@ -54,22 +52,28 @@ button {
     color: white;
     size: 200px;
     width: 100%;
+    float: none;
   }
 
 
 
   .container {
     height: 90vh;
-    margin: 10rem;
+    margin: 0rem;
     display: grid;
     grid-gap: 10px 10px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px;
+    float: left;
+    margin: 2em;
   }
+
   .cell {
     font-size: 3rem;
     text-align: center;
-    padding: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .cell-1 {
     background: rgb(254, 79, 79);
@@ -97,6 +101,9 @@ button {
   }
   .cell-9 {
     background: rgb(220, 103, 177);
+  }
+  .cell-q {
+    background: transparent;
   }
 
 
