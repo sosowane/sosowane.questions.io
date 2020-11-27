@@ -115,10 +115,7 @@ button {
     text-align: center;
     font-size: auto;
   }
-  
-  .span4, .span6, .spanAll {
-    grid-column-end: -1;
-  }
+
   
 header {
     justify-content: left;
@@ -174,12 +171,12 @@ li a {
     .container {
       display: grid;
       grid-gap: 10px 10px;
-      grid-template-columns: 50px 50px 50px;
-      grid-template-rows: 50px 50px 50px;
+      grid-template-columns: 80px 80px 80px;
+      grid-template-rows: 80px 80px 80px;
     }
   
     .cell {
-      font-size: 2rem;
+      font-size: 1.3rem;
       text-align: center;
       display: flex;
       align-items: center;
@@ -190,9 +187,15 @@ li a {
       overflow: hidden;
       position:fixed;
   }
-  html, body {
-    margin: 0;
-    height: 100%;
-    overflow: hidden
-  }
+    h1{
+      font-size: 2.2em;
+    }
+    body{
+      font-size: 2em;
+    }
+    html, body {
+      margin: 0;
+      height: 100%;
+      overflow: hidden
+    }
   }
