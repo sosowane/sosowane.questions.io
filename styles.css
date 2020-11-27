@@ -59,7 +59,6 @@ button {
 
 
   .container {
-    margin: 0rem;
     display: grid;
     grid-gap: 10px 10px;
     grid-template-columns: 150px 150px 150px;
@@ -116,15 +115,6 @@ button {
     text-align: center;
     font-size: auto;
   }
-
-  @media (min-width: 650px) {
-    .span4 {
-      grid-column-end: span 4;
-    }
-    .span6 {
-      grid-column-end: span 6;
-    }
-  }
   
   .span4, .span6, .spanAll {
     grid-column-end: -1;
@@ -178,4 +168,31 @@ li a {
     margin: 0;
     padding: 1.5em;
     overflow: hidden;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .container {
+      display: grid;
+      grid-gap: 10px 10px;
+      grid-template-columns: 50px 50px 50px;
+      grid-template-rows: 50px 50px 50px;
+    }
+  
+    .cell {
+      font-size: 2rem;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .noScroll {
+      overflow: hidden;
+      position:fixed;
+  }
+  html, body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden
+  }
   }
