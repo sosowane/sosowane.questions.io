@@ -188,6 +188,8 @@ h3 {
       border: 0em;
       margin: 0em;
       size: 200px;
+      width: 150%;
+      height: 85%;
       display: inline-block;
     }
 
