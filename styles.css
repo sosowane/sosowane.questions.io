@@ -47,17 +47,6 @@ button {
     font-size: 30px;
   }
 
-  footer,
-  .push {
-    padding:1em 0; 
-    color: white;
-    size: 200px;
-    width: 100%;
-    float: none;
-  }
-
-
-
   .container {
     display: grid;
     grid-gap: 10px 10px;
@@ -154,6 +143,12 @@ h3 {
     a:link{
       font-size: 80%;
     }
+
+    button {
+      height: 100%;
+      width: 100%;
+    }
+
     .container {
       display: grid;
       grid-gap: 10px 10px;
@@ -182,16 +177,6 @@ h3 {
       font-size: 1.5em;
     }
 
-    footer,
-    .push {
-      padding:1em; 
-      border: 0em;
-      margin: 0em;
-      size: 200px;
-      width: 150%;
-      height: 85%;
-      display: inline-block;
-    }
 
     html, body {
       margin: 0;
