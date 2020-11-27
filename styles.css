@@ -16,29 +16,31 @@ a:link {
 body {
     text-align: center;
     font-size: 2.3em;
-    width: 100%;
+    width: 99%;
     font-family: "Questrial";
     color: rgb(57, 57, 57);
-    background-color: white
   }
 
 button {
-    background-color:rgba(255, 217, 119, 0.872);
+    background-color: none;
     padding: 13px 32px;
-    display: inline-block;
+    display: inline-grid;
     font-size: .5em;
     font-family: "Questrial";
+    color: white;
+    background-color: transparent;
     margin: 1em;
     border: none;
     outline: none;
   }
+
   button:hover {
-    background-color: rgba(237, 152, 86, 0.872);
-    color: white;
+   /* add a tooltip for when hovered
+   */
   }
 
+
   .flex-container > div {
-    background-color: #f1f1f1;
     width: inherit;
     height: inherit;
     margin: 10px;
@@ -54,6 +56,73 @@ button {
     width: 100%;
   }
 
+
+
+  .container {
+    height: 90vh;
+    margin: 10rem;
+    display: grid;
+    grid-gap: 10px 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .cell {
+    font-size: 3rem;
+    text-align: center;
+    padding: 1.2em;
+  }
+  .cell-1 {
+    background: rgb(254, 79, 79);
+  }
+  .cell-2 {
+    background: rgb(254, 155, 79);
+  }
+  .cell-3 {
+    background: rgb(254, 219, 79);
+  }
+  .cell-4 {
+    background: rgb(129, 222, 111);
+  }
+  .cell-5 {
+    background: rgb(105, 228, 185);
+  }
+  .cell-6 {
+    background: rgb(103, 189, 220);
+  }
+  .cell-7 {
+    background: rgb(103, 126, 220);
+  }
+  .cell-8 {
+    background: rgb(165, 103, 220);
+  }
+  .cell-9 {
+    background: rgb(220, 103, 177);
+  }
+
+
+  .grid-container {
+    display: grid;
+    padding: 0px;
+  }
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-size: auto;
+  }
+
+  @media (min-width: 650px) {
+    .span4 {
+      grid-column-end: span 4;
+    }
+    .span6 {
+      grid-column-end: span 6;
+    }
+  }
+  
+  .span4, .span6, .spanAll {
+    grid-column-end: -1;
+  }
+  
 header {
     justify-content: left;
     font-family: 'Questrial';
