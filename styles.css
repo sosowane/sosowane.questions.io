@@ -149,34 +149,20 @@ h3 {
     margin: .5em;
 }
 
-li {
-    float: left;
-    justify-content: center;
-  }
-  
-li a {
-    display: block;
-    padding: 8px;
-    background-color: #dddddd;
-  }
-
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 1.5em;
-    overflow: hidden;
-  }
 
   @media only screen and (max-width: 768px) {
+    a:link{
+      font-size: 80%;
+    }
     .container {
       display: grid;
       grid-gap: 10px 10px;
       grid-template-columns: 80px 80px 80px;
       grid-template-rows: 80px 80px 80px;
     }
-  
+
     .cell {
-      font-size: 1.3rem;
+      font-size: 1.6rem;
       text-align: center;
       display: flex;
       align-items: center;
@@ -186,13 +172,25 @@ li a {
     .noScroll {
       overflow: hidden;
       position:fixed;
-  }
-    h1{
+    }
+
+    h1 {
       font-size: 2.2em;
     }
-    body{
+
+    body {
       font-size: 2em;
     }
+
+    footer,
+    .push {
+      padding:1em; 
+      border: 0em;
+      margin: 0em;
+      size: 200px;
+      display: inline-block;
+    }
+
     html, body {
       margin: 0;
       height: 100%;
