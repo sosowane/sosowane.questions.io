@@ -58,7 +58,6 @@ button {
 
 
   .container {
-    height: 90vh;
     margin: 0rem;
     display: grid;
     grid-gap: 10px 10px;
