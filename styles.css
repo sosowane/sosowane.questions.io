@@ -51,9 +51,6 @@ body{
     width: 100%;
     height: 5em; 
   }
-header {
-
-  }
 
 h1 {
     color: #64a1da;
@@ -74,6 +71,9 @@ html {
 img {
   width: 44px;
   height: 44px;
+  position: fixed; 
+  top: 4em; 
+  right: 1.4em;
 }
 
 #pagewrap {
@@ -98,7 +98,7 @@ section {
     .butt-group button {
       background-color: #F2FBFF; /*  background */
       border-radius: 5px;
-      border: 4px solid #80baf0; /*  border */
+      border: 3px solid #80baf0; /*  border */
       color: #367ec2; /* White text */
       margin: .2em;
       cursor: pointer; /* Pointer/hand icon */
@@ -112,10 +112,19 @@ section {
     footer{
       position: absolute;
       bottom: 7em;
-      left: 1em;
+      left: .8em;
       width: 100%;
       height: 5em; 
     }
+
+    h1 {
+      color: #64a1da;
+      font-size: 900%;
+      padding: .05em;
+      font-family: "Imbue";
+      letter-spacing: .03em;
+      margin: 0em;
+  }
 
     section {
       font-size: 150%;
