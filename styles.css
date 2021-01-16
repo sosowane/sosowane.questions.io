@@ -1,199 +1,127 @@
-@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Imbue:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
 /*
 I coded this myself! 😍🤪
 just for my friends plz do not take this seriously
+also this is the second verson
 */
-
-a:link {
-    font-size: 100%;
-    font-weight: 700;
-    letter-spacing: 0.04em; 
-    text-align: center;
-    font-family: "Questrial";
-    color: white;
+body{
+  margin: 0em;
+}
+  .butt-group button {
+    background-color: #F2FBFF; /*  background */
+    border-radius: 5px;
+    border: 4px solid #80baf0; /*  border */
+    color: #367ec2; /* White text */
+    margin: .2em;
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    width: 10%;
+    height: 113%;
   }
   
-  section{
-    justify-content: center;
-    display: inline-block;
-    margin-top: 4em; 
-    margin-right: 1em; 
-    margin-left: 1em;
-  }
-body {
-    text-align: center;
-    font-size: 2.3em;
-    width: 99%;
-    font-family: "Questrial";
-    color: rgb(57, 57, 57);
-  }
-
-button {
-    background-color: none;
-    display: inline-block;
-    font-size: .4em;
-    font-family: "Questrial";
-    color: white;
-    background-color: transparent;
-    height: 100%;
-    padding: 0em;
-    border: none;
-    outline: none;
-  }
-
-  button:hover {
-   /* add a tooltip for when hovered
-   */
-  }
-
-
-  .flex-container > div {
-    width: inherit;
-    height: inherit;
-    margin: 10px;
-    line-height: 75px;
-    font-size: 30px;
-  }
-
-  .container {
-    display: grid;
-    grid-gap: 10px 10px;
-    grid-template-columns: 150px 150px 150px;
-    grid-template-rows: 150px 150px 150px;
-    float: left;
-    margin: 2em;
-  }
-
-  .cell {
-    font-size: 3rem;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .cell-1 {
-    background: rgb(254, 79, 79);
-  }
-  .cell-2 {
-    background: rgb(254, 155, 79);
-  }
-  .cell-3 {
-    background: rgb(245, 209, 62);
-  }
-  .cell-4 {
-    background: rgb(132, 199, 119);
-  }
-  .cell-5 {
-    background: rgb(92, 210, 169);
-  }
-  .cell-6 {
-    background: rgb(103, 189, 220);
-  }
-  .cell-7 {
-    background: rgb(103, 126, 220);
-  }
-  .cell-8 {
-    background: rgb(165, 103, 220);
-  }
-  .cell-9 {
-    background: rgb(220, 103, 177);
-  }
-
-
-  .grid-container {
-    display: grid;
-    padding: 0px;
-  }
-  .grid-container > div {
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    font-size: auto;
+  /* Clear floats (clearfix hack) */
+  .butt-group:after {
+    content: "";
+    clear: both;
+    display: table;
   }
   
+  /* Add a background color on hover */
+  .butt-group button:hover {
+    background-color: #80baf0;
+    border: #64a1da;
+    color: white;
+  }
+
+  .butt-group button:focus {
+    background-color: #5598d7;
+    border: #64a1da;
+    color: white;
+      outline: none !important;
+  }
+
+  footer{
+    position: absolute;
+    bottom: 1.6em;
+    left: 2em;
+    width: 100%;
+    height: 5em; 
+  }
 header {
-    justify-content: left;
-    font-family: 'Questrial';
-    overflow: hidden;
+
   }
 
 h1 {
-    font-weight: 700;
-    font-size: 2.6em;
-    letter-spacing: 0.04em; 
-    text-align: center;
-    font-family: "Questrial";
-    margin-top: .19em;
-    margin-bottom: .12em;
-}
-h2 {
-    font-size: 20%;
-    font-weight: 700;
-    letter-spacing: 0.04em; 
-    text-align: center;
-    font-family: "Questrial";
-    margin: .5em;
-}
-h3 {
-    font-size: 40%;
-    font-weight: 700;
-    letter-spacing: 0.04em; 
-    text-align: center;
-    font-family: "Questrial";
-    margin: .5em;
+    color: #64a1da;
+    font-size: 1000%;
+    padding: .05em;
+    font-family: "Imbue";
+    letter-spacing: .06em;
+    margin: 0em;
 }
 
-  @media only screen and (max-width: 768px) {
-    a:link{
-      font-size: 80%;
+html {
+  font-family:sans-serif;
+  -ms-text-size-adjust:100%;
+  -webkit-text-size-adjust:100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+img {
+  width: 44px;
+  height: 44px;
+}
+
+#pagewrap {
+  background-color: rgb(214, 242, 254);
+  background-image: linear-gradient(to bottom right, rgb(200, 239, 255), rgb(226, 244, 252));
+  width: 100%;
+  height: 100%;
+}
+
+section {
+    font-size: 300%;
+    text-align: center;
+    color: #367ec2;
+    padding: 2em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+  @media only screen and (max-width: 768px) { /* for phones basically*/
+
+
+    .butt-group button {
+      background-color: #F2FBFF; /*  background */
+      border-radius: 5px;
+      border: 4px solid #80baf0; /*  border */
+      color: #367ec2; /* White text */
+      margin: .2em;
+      cursor: pointer; /* Pointer/hand icon */
+      float: left; /* Float the buttons side by side */
+      font-family: 'Montserrat', sans-serif;
+      font-size: .9em;
+      width: 30%;
+      height: 70%;
     }
 
-    button {
-      height: 100%;
+    footer{
+      position: absolute;
+      bottom: 7em;
+      left: 1em;
       width: 100%;
+      height: 5em; 
     }
 
-    .container {
-      display: grid;
-      grid-gap: 10px 10px;
-      grid-template-columns: 80px 80px 80px;
-      grid-template-rows: 80px 80px 80px;
-      padding-right: 2em;
-    }
-
-    .cell {
-      font-size: 1.8rem;
+    section {
+      font-size: 150%;
       text-align: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .noScroll {
-      overflow: hidden;
-      position:fixed;
+      color: #367ec2;
+      padding: 2em;
+      font-family: 'Montserrat', sans-serif;
   }
-
-    h1 {
-      font-size: 2.2em;
-      font-weight: 900;
-      letter-spacing: 0em; 
-    }
-
-    body {
-      font-size: 1.5em;
-    }
-
-    html, body {
-      margin: 0;
-      height: 100%;
-      overflow: hidden
-    }
-
-    section{
-      justify-content: center;
-      display: inline-block;
-      margin-top: 1.4em; 
-      margin-right: 1em; 
-      margin-left: 1em;
-    }
-  }
+}
