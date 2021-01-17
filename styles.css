@@ -199,9 +199,10 @@ li:last-child {
       cursor: pointer; /* Pointer/hand icon */
       float: left; /* Float the buttons side by side */
       font-family: 'Montserrat', sans-serif;
-      font-size: 1em;
+      font-size: .96em;
       width: 31%;
       height: 75%;
+      align-content: center;
     }
 
     footer{
