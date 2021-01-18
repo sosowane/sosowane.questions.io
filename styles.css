@@ -406,5 +406,6 @@ li:last-child {
     padding: 1em;
     height: 12%;
     margin: 1.2em;
+    font-size: .9em;
   }
 }
