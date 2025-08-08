@@ -23,7 +23,6 @@
 #searchResults {
   margin-top: 20px;
   padding: 10px;
-  background-color: #f9f9f9;
   border-radius: 4px;
 }
 
@@ -37,10 +36,19 @@
   margin: 8px 0;
   padding: 8px;
   border-radius: 4px;
-  background-color: white;
   transition: background-color 0.2s;
 }
 
 #searchResults p:hover {
   background-color: #f0f7ff;
+}
+
+/* Suggestion Form Button Styles */
+#suggestionModal button[type="submit"]:hover {
+  background-color: #4a90e2;
+}
+
+#suggestionModal button[type="submit"]:active {
+  background-color: #3a7cbd;
+  transform: translateY(1px);
 }
