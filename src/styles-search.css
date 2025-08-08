@@ -1,0 +1,46 @@
+/* Search Modal Styles */
+.close, .close-suggestion, .close-search {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#searchInput {
+  border: 2px solid #64a1da;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+#searchInput:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.3);
+}
+
+#searchResults {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+}
+
+#searchResults h4 {
+  border-bottom: 2px solid #64a1da;
+  padding-bottom: 5px;
+  margin-top: 15px;
+}
+
+#searchResults p {
+  margin: 8px 0;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: white;
+  transition: background-color 0.2s;
+}
+
+#searchResults p:hover {
+  background-color: #f0f7ff;
+}

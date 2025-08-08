@@ -8,6 +8,9 @@
         <link rel = "stylesheet"
         type = "text/css"
         href = "styles.css" />
+        <link rel = "stylesheet"
+        type = "text/css"
+        href = "styles-search.css" />
         <script src="qs.js"></script>
         <script src="dynam.js"></script>
     </head>
@@ -32,10 +35,22 @@
 
             <ul>
                 <li><a href="#" id="suggestBtn">Suggest A Question</a></li>
-                <li><a href="search">Search</a></li>
+                <li><a href="#" id="searchBtn">Search</a></li>
                 <li><a href="me">About Me</a></li>
                 <li><a href="contact">Contact</a></li>
           </ul>
+      </div>
+
+      <!-- Search Modal -->
+      <div id="searchModal" class="modal" style="display: none;">
+        <div class="modal-content">
+          <span class="close-search">&times;</span>
+          <h3>Search Questions</h3>
+          <div style="margin: 20px 0;">
+            <input type="text" id="searchInput" placeholder="Type to search questions..." style="width: 100%; padding: 10px; margin-bottom: 20px;">
+            <div id="searchResults" style="max-height: 400px; overflow-y: auto;"></div>
+          </div>
+        </div>
       </div>
 
       <!-- Suggestion Modal -->
