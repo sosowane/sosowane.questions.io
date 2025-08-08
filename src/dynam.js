@@ -88,7 +88,6 @@ window.onload = function(){
 
     searchBtn.onclick = function(e) {
         e.preventDefault();
-        modal.style.display = "none";
         searchModal.style.display = "block";
         searchInput.focus();
     }
