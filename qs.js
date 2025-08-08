@@ -15,50 +15,70 @@ var politics = ["do you believe eugenics are ethical or not?","could you be clos
 
 var relation = ["if you were to have a threesome, how would you pick the special guest?","do you say “I love you” enough?","what is a non negotiable in a relationship?","do you have any “meet cutes” with anyone?","do you like being serenaded?","how long were your longest and shortest relationship?","would you fight someone for your S.O.?","do you fall for people quickly/easily?", "what's a petty reason you couldn't date someone?","do you think you could survive a long distance relationship?","how do you personally get over someone?","what's something you could never give your S.O. no matter how much they beg?" ,"do you believe in emotional cheating?","could you be in a polygamous relationship?","could you be in an open relationship?","why did your last relationship end?" ,"what's the most money you've ever spent on your S.O. and on what?","has an ex told you that they regret ending things with you?", "have you ever gotten a Toxic Future Text?","what’s currently stopping you from confessing your feelings for that one person?","are you looking for a serious relationship right now?", "do you think your significant other is obligated to tell you that they are bisexual?","would you be more upset if your S.O. cheated on someone more or less attractive than you?", "are you somebody else's 'best sex'?","are you intimidated if the other person leads during sex?","what's your sexual orientation?","could you go without sex in a relationship?" ,"how many times have you been in love?", "have you ever sabotaged someone’s relationship?","what's the most embarassing thing that has happened to you during sex?", "have you ever had a crush on a friend's SO?","do you think you could have a platonic relationship with the opposite sex?", "have you ever cried during sex?","is throwing on or catching ass from another considered cheating?", "who out of your friends would you pick to have a threesome with?","what are 5 traits your future spouse has to have?","who was your favorite body?","when’s the last time you went on a date?","does sex with the same person eventually get boring?","do you think you’ve met the person you’re going to marry?","what's a non-negotiable for you in a relationship?","is sex over or underrated?", "do you ", "who was the best sex you ever had?","would you like it if a girl shoots her a shot at you?","big spoon or little spoon?","do you believe someone can be “out of your league”?","what age do you want to get married?","how important is social media in a relationship?","how many kids do you want?","how many exes do you have?","would you date someone exactly like you?","would you date you if you were someone else?","would you let your kids date someone just like you?","do you have a 'type'?","do you have a list of names for your future kids?","who’s your favorite person on this planet?","if you were proposed to on a holiday, would you say no?","how do you want to be proposed to/to propose?","do you believe in right person, wrong time?","what's the limit for how much you want to spend on your wedding?","do you have to live w someone before you marry them?","do you think you’ve already met the person you’re going to marry?","how long do you have to date someone to propose?","what's the story of the first time you told someone you loved them? did you mean it?","are you over the first person you loved?","have you ever loved somoene that didn't love you back?","has your heart ever been broken?","have you ever been cheated on?","do you usually pursue people or do you wait for them to come to you?","have you ever cheated?","how do you spit game?","are you opposed to entanglements?","do you love more than lust?","does entertaining people you don’t like make you a bad person?","what pet name do you hate being called?","have you ever lied about being in a relatinship?","what pet name would you want to be called by your SO?","how do you express love without telling them?","do you regret how you treated one of your old flames?","do you think its important for your SO's parents to like you?","do you flirt for fun or to get something out of it?","what's your favorite thing about your boo (or the person you wish was your boo)?","can you have more than one soulmate?","how much do you need the person you're dating to open up?","what's there funniest lie someone told you while they were cheating?","have you ever messed w someone in a relationship?","why aren’t you currently in a relationship?","do you think you will be in a relationship 2-3 months from now?","do you catch feelings easily?","do you think you can be in love w multiple people?","could you forgive someone after they’ve cheated?","could you invite your ex to your wedding?","could you invite someone you fucked to your wedding?","what do you think cheating is?","how do you feel about dating someone in a different phase of life?","do you want a relationship right now?","would you say you have commitment issues?","do you miss your ex?","when was the last time you were on a date?","have you ever hidden your person or ignored them in public?","have you ever had a pregnancy scare?","can you be friends with someone dating your ex?","could you be with someone who doesn’t like to travel?","who's on your mind (relationship wise)?","in a relationship, would you rather know every lie or none at all?","what’s the most shallow reason you ended things w someone?","do you prefer your significant other to be friends with your friends or separate?","could you be with someone shorter or taller than you?","do you kiss on the first date?","could you marry someone outside of your race?","are your nudes anywhere on the internet?","have you ever kept someone from being with someone else, but you didn't want them?","have you ever had a pregnancy scare?","could you be with someone who doesn’t like to travel?","what’s the most shallow reason you ended things w someone?","when in a relationship, do you tell your SO about everyone who tries to get with you?","do you prefer your significant other to be friends with your friends or separate?","could you be with someone shorter or taller than you?","are you on good terms w your exes or situationships?","could you marry someone outside of your race?","could you date someone younger than you?","would you ever make your significant other stop being friends with someone because you feel like they are a threat to your relationship?","how long does it take you to fall in love?","how long should it take to fall in love?","how long is too long to be engaged?","do you tell your significant other your friends' business/drama?","do you care if someone you’re talking to/messed with talked to one of your friends?","how do you handle rejection?","do you shoot your shot?","what kind of people are you attracted to?","at what point is an age gap weird?","do you want your partner to do things you don't/wouldn't do?","are you in love right now?","do you believe in love?","have you ever been in love?","do you believe in soulmates?","could you date someone who is disinterested in all of your hobbies?","do you have a song you want to walk down the aisle to?","if the love of your life didn't believe in marriage, how would you cope?","do you have good taste relationship-wise?","do you actively say 'I love you' too loosely?","could you date someone who doesn't drink?","do you date to marry or date to explore?","has our generation lost sight of love?","are you mature enough to be friends with someone you once had feelings for?","have you ever been ghosted?","could you be hooking up w multiple people at once?","is sex important/a big deal to you?","is sex a must before you fall in love?","have you fucked the same person as any of your friends?","would you cuff someone without fucking them first?","would you fuck a virgin?","head or sex?","what were you most curious about before having sex for the first time?","do you like morning sex?","are you dominant or submissive?","do you have a sex playlist?","do you prefer music on during sex?","how far is long distance for a relationship?","is there a song you like to fuck to or would like to fuck to?","do you own a sex toy?","have you ever used a sex toy?","do you eat ass?","do you think you’re a little bit gay?","have you ever tried anal?","do you enjoy being spanked during sex?","do you send nudes?","do you fuck people you're not emotionally attached to?","when was the last time you masterbated?","when did you lose your virginity?","where did you lose your virginity?","do you give head? do you enjoy it?","how long do you usually last?","could you abstain from sex and physical contact around people you're attracted to for a month if you'd win 100k?","when was the best sex you've ever had?","are you a top or bottom?","when was the last time you had sex?","do you make eye contact during sex?","could you have sex w someone you've known for less than a week?","do you adjust the way you kiss or kiss everyone the same way?","do you have any sneaky links?","would you fuck on the first date?","what’s the weirdest thing someone called you during sex?","how many people do you think you've kissed?","do you usually orgasm when you fuck?","have you ever made a sex tape?","does size matter?","do you have any fetishes?","do you talk during sex?","if someone you fucked with died, do you still count that body?","what’s your favorite sexual act?","have a baby w your last body or never cum again?","do you ask for sex or just go with the flow?","do you verbally ask for consent?","do you hold hands while having sex?","would you fuck anyone in your friend group?","what’s your favorite sex position?","have you ever had sex while high?","have you ever been walked in on?","do you moan or curse during sex?","do you think women are hornier than men?","WAP or gorilla grip?","do you like being choked?","do you like being fingered?","have you ever had lockjaw while sucking dick?","how many bodies do you have?","do you usually fuck raw?","do you care about how many bodies someone has?","do you care about how many bodies you have?","do you have a body you regret?","do you know exactly how big your dick is?","has anyone ever thrown up on your dick?","would you ever be in a threesome?","would you ever be in a train?","what’s the weirdest place you had sex?","what’s the weirdest thing someone said to you during sex?","when's the last time you had sex?"]
 
-var qs = [].concat(family, thisorthat, hypo, show, personal, religion, politics, relation)
+// Track shown questions for each category
+let shownFamily = new Set();
+let shownThisOrThat = new Set();
+let shownHypo = new Set();
+let shownShow = new Set();
+let shownPersonal = new Set();
+let shownReligion = new Set();
+let shownPolitics = new Set();
+let shownRelation = new Set();
+let shownRandom = new Set();
 
+// Get a random question that hasn't been shown yet
+function getRandomQuestion(array, shown) {
+    // If all questions have been shown, reset the tracking
+    if (shown.size >= array.length) {
+        shown.clear();
+    }
 
-function newFamily(){
-    var randomNumber = Math.floor(Math.random()*(family.length));
-    document.getElementById('qDisplay').innerHTML = family[randomNumber];
+    // Keep trying until we find an unshown question
+    let question;
+    do {
+        const randomIndex = Math.floor(Math.random() * array.length);
+        question = array[randomIndex];
+    } while (shown.has(question));
+
+    // Mark this question as shown
+    shown.add(question);
+    return question;
 }
 
-function newThisOrThat(){
-    var randomNumber = Math.floor(Math.random()*(thisorthat.length));
-    document.getElementById('qDisplay').innerHTML = thisorthat[randomNumber];
+function newFamily() {
+    document.getElementById('qDisplay').innerHTML = getRandomQuestion(family, shownFamily);
 }
 
-function newHypo(){
-    var randomNumber = Math.floor(Math.random()*(hypo.length));
-    document.getElementById('qDisplay').innerHTML = hypo[randomNumber];
+function newThisOrThat() {
+    document.getElementById('qDisplay').innerHTML = getRandomQuestion(thisorthat, shownThisOrThat);
 }
 
-function newShow(){
-    var randomNumber = Math.floor(Math.random()*(show.length));
-    document.getElementById('qDisplay').innerHTML = show[randomNumber];
+function newHypo() {
+    document.getElementById('qDisplay').innerHTML = getRandomQuestion(hypo, shownHypo);
 }
 
-function newPersonal(){
-    var randomNumber = Math.floor(Math.random()*(personal.length));
-    document.getElementById('qDisplay').innerHTML = personal[randomNumber];
+function newShow() {
+    document.getElementById('qDisplay').innerHTML = getRandomQuestion(show, shownShow);
 }
 
-function newReligion(){
-    var randomNumber = Math.floor(Math.random()*(religion.length));
-    document.getElementById('qDisplay').innerHTML = religion[randomNumber];
+function newPersonal() {
+    document.getElementById('qDisplay').innerHTML = getRandomQuestion(personal, shownPersonal);
 }
 
-function newPolitics(){
-    var randomNumber = Math.floor(Math.random()*(politics.length));
-    document.getElementById('qDisplay').innerHTML = politics[randomNumber];
+function newReligion() {
+    document.getElementById('qDisplay').innerHTML = getRandomQuestion(religion, shownReligion);
 }
 
-function newRelation(){
-    var randomNumber = Math.floor(Math.random()*(relation.length));
-    document.getElementById('qDisplay').innerHTML = relation[randomNumber];
+function newPolitics() {
+    document.getElementById('qDisplay').innerHTML = getRandomQuestion(politics, shownPolitics);
 }
 
-function newRandom(){
-    var randomNumber = Math.floor(Math.random()*(qs.length));
-    document.getElementById('qDisplay').innerHTML = qs[randomNumber];
+function newRelation() {
+    document.getElementById('qDisplay').innerHTML = getRandomQuestion(relation, shownRelation);
+}
+
+function newRandom() {
+    // Combine all arrays
+    const allQuestions = [].concat(family, thisorthat, hypo, show, personal, religion, politics, relation);
+    document.getElementById('qDisplay').innerHTML = getRandomQuestion(allQuestions, shownRandom);
 }
