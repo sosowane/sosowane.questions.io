@@ -1,0 +1,61 @@
+<! doctype html>
+<html lang=en>
+    <head>
+        <meta charset=utf-8>
+        <meta name=viewport content = "width=device-width, initial-scale=1.0, user=scalable=yes">
+        <title>Q&A</title>
+        <link rel = "shortcut icon" href="q.png">
+        <link rel = "stylesheet"
+        type = "text/css"
+        href = "styles.css" />
+        <script src="qs.js"></script>
+    </head>
+</html>
+
+<div id="pagewrap">
+
+<header>
+    <h1><a style= "text-decoration: none; color: #64a1da;" href="index.html">Q&A</a>
+    </h1>
+    <h2>
+        ask away
+    </h2>
+    <a class="button" href="submit.html" id="menu_button"><img src="bento.png"/></a>
+    <button id="myBtn" style="position: fixed; top: 4em; right: 5em; width: 55px; height: 55px; background-image: 'bento.png'; outline: none; background-color: Transparent; border: none; cursor:pointer; overflow: hidden;"></button>
+    
+    <!-- The Modal -->
+    <div id="myModal" class="modal" >
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+
+            <ul>
+                <li><a href="suggest">Suggest A Question</a></li>
+                <li><a href="search">Search</a></li>
+                <li><a href="me">About Me</a></li>
+                <li><a href="contact">Contact</a></li>
+          </ul>
+      </div>
+      
+    </div>
+</header>
+
+<section>
+    <div id="qDisplay"></div>
+</section>
+
+<footer>
+<div class="butt-group">
+    <button onClick = "newRandom()">random</button>
+    <button onClick = "newPersonal()">personal</button>
+    <button onClick = "newRelation()">relationships</button>
+    <button onClick = "newThisOrThat()">this or that</button>
+    <button onClick = "newHypo()">hypothetical</button>
+    <button onClick = "newFamily()">family</button>
+    <button onClick = "newReligion()">spirituality</button>
+    <button onClick = "newPolitics()">politics</button>
+    <button onClick = "newShow()">show me</button>
+</div>
+</footer>
+</div>
