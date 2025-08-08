@@ -92,8 +92,15 @@ window.onload = function(){
         searchInput.focus();
     }
 
+    // Function to clear search
+    function clearSearch() {
+        searchInput.value = '';
+        searchResults.innerHTML = '';
+    }
+
     closeSearch.onclick = function() {
         searchModal.style.display = "none";
+        clearSearch();
     }
 
     // Add search input handler
@@ -116,6 +123,7 @@ window.onload = function(){
         }
         if (event.target == searchModal) {
             searchModal.style.display = "none";
+            clearSearch();
         }
     }
 };
