@@ -2,9 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 /*
-I coded this myself! 😍🤪
-just for my friends plz do not take this seriously
-also this is the second verson
+v3
 */
 
 /* Header styles */
@@ -414,6 +412,7 @@ li:last-child {
     font-size: 1em;
     color: #367ec2;
     margin: 0 auto;
+    text-align: center;
   }
   
   li {
