@@ -16,12 +16,18 @@ function transitionToNewQuestion(newQuestionText) {
 
 // Function to show modal with animation
 function showModal(modal) {
-    modal.classList.add('show');
+    modal.style.display = "block";
+    setTimeout(() => {
+        modal.classList.add('show');
+    }, 10);
 }
 
 // Function to hide modal with animation
 function hideModal(modal) {
     modal.classList.remove('show');
+    setTimeout(() => {
+        modal.style.display = "none";
+    }, 300); // Match this with your CSS transition duration
 }
 
 // Counts for each category
