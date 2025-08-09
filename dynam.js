@@ -38,6 +38,8 @@ window.onload = function () {
     const searchModal = document.getElementById("searchModal");
     const searchBtn = document.getElementById("searchBtn");
     const closeSearch = document.getElementsByClassName("close-search")[0];
+    const searchInput = document.getElementById("searchInput");
+    const searchResults = document.getElementById("searchResults");
 
     // Add click handler for outside clicks on all modals
     modals.forEach(modal => {
@@ -48,56 +50,62 @@ window.onload = function () {
             }
         });
     });
-    var searchInput = document.getElementById("searchInput");
 
     searchBtn.onclick = function (e) {
         e.preventDefault();
         hideModal(modal); // Hide main modal first
         showModal(searchModal);
+        setTimeout(() => {
+            searchInput.focus();
+            searchInput.value = '';
+            searchResults.innerHTML = '';
+        }, 100);
     }
-
-    closeSearch.onclick = function () {
-        hideModal(searchModal);
-    }
-
-    // Initialize category counts and Question of the Day
-    updateCategoryCounts(categories);
-    var searchResults = document.getElementById("searchResults");
 
     // Function to search questions
     function searchQuestions(query) {
+        if (!query.trim()) {
+            searchResults.innerHTML = '';
+            return;
+        }
+
         query = query.toLowerCase();
         let results = [];
 
         // Search in all question arrays
         const categories = {
-            'Family Questions': family,
+            'Family': family,
             'This or That': thisorthat,
-            'Hypothetical Questions': hypo,
-            'Show Me Questions': show,
-            'Personal Questions': personal
+            'Hypothetical': hypo,
+            'Show Me': show,
+            'Personal': personal,
+            'Religion': religion,
+            'Politics': politics,
+            'Relationships': relation
         };
 
         for (let category in categories) {
-            categories[category].forEach(question => {
-                if (question.toLowerCase().includes(query)) {
-                    results.push({ category, question });
-                }
-            });
+            if (categories[category]) {  // Check if array exists
+                categories[category].forEach(question => {
+                    if (question.toLowerCase().includes(query)) {
+                        results.push({ category, question });
+                    }
+                });
+            }
         }
 
-        return results;
+        displayResults(results);
     }
 
     // Function to display search results
     function displayResults(results) {
         if (results.length === 0) {
-            searchResults.innerHTML = '<p style="padding: 10px;">No questions found matching your search.</p>';
+            searchResults.innerHTML = '<p style="padding: 10px; color: #64a1da;">No questions found matching your search.</p>';
             return;
         }
 
         let currentCategory = '';
-        let html = '';
+        let html = '<div class="search-results-container">';
 
         results.forEach(({ category, question }) => {
             if (category !== currentCategory) {
