@@ -1,8 +1,11 @@
 window.onload = function () {
+    // Get all modals
+    const modals = document.querySelectorAll('.modal');
+
     // Main Menu Modal
-    var modal = document.getElementById("myModal");
-    var btn = document.getElementById("myBtn");
-    var span = document.getElementsByClassName("close")[0];
+    const modal = document.getElementById("myModal");
+    const btn = document.getElementById("myBtn");
+    const span = document.getElementsByClassName("close")[0];
 
     btn.onclick = function () {
         showModal(modal);
@@ -13,9 +16,9 @@ window.onload = function () {
     }
 
     // Suggestion Modal
-    var suggestionModal = document.getElementById("suggestionModal");
-    var suggestionBtn = document.getElementById("suggestBtn");
-    var closesuggestion = document.getElementsByClassName("close-suggestion")[0];
+    const suggestionModal = document.getElementById("suggestionModal");
+    const suggestionBtn = document.getElementById("suggestBtn");
+    const closesuggestion = document.getElementsByClassName("close-suggestion")[0];
 
     suggestionBtn.onclick = function (e) {
         e.preventDefault();
@@ -28,9 +31,19 @@ window.onload = function () {
     }
 
     // Search Modal
-    var searchModal = document.getElementById("searchModal");
-    var searchBtn = document.getElementById("searchBtn");
-    var closeSearch = document.getElementsByClassName("close-search")[0];
+    const searchModal = document.getElementById("searchModal");
+    const searchBtn = document.getElementById("searchBtn");
+    const closeSearch = document.getElementsByClassName("close-search")[0];
+
+    // Add click handler for outside clicks on all modals
+    modals.forEach(modal => {
+        modal.addEventListener('click', function (e) {
+            // If the click is on the modal background (not the content)
+            if (e.target === modal) {
+                hideModal(modal);
+            }
+        });
+    });
     var searchInput = document.getElementById("searchInput");
 
     searchBtn.onclick = function (e) {
@@ -120,16 +133,17 @@ window.onload = function () {
         }, 300); // Debounce search for better performance
     });
 
-    // Close modals when clicking outside
-    window.onclick = function (event) {
-        if (event.target == modal) {
-            hideModal(modal);
-        }
-        if (event.target == suggestionModal) {
-            hideModal(suggestionModal);
-        }
-        if (event.target == searchModal) {
-            hideModal(searchModal);
+    // Handle clicks on modal backgrounds
+    document.addEventListener('mousedown', handleModalClick);
+    document.addEventListener('touchstart', handleModalClick);
+
+    function handleModalClick(event) {
+        const clickedModal = event.target.closest('.modal');
+        // If we clicked inside a modal but not on the modal content
+        if (clickedModal && !event.target.closest('.modal-content')) {
+            hideModal(clickedModal);
+            event.preventDefault(); // Prevent any default behavior
+            event.stopPropagation(); // Stop event from bubbling
         }
     }
 };
