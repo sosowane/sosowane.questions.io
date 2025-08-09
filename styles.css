@@ -75,6 +75,54 @@ v3
   transition: background-color 0.3s;
 }
 
+/* Swipe animations */
+section {
+  position: relative;
+  overflow: hidden;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: pan-x;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;  /* Ensure consistent height */
+}
+
+#qDisplay {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+  will-change: transform, opacity;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.slide-left-enter {
+  position: absolute;
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.slide-left-exit {
+  position: absolute;
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.slide-right-enter {
+  position: absolute;
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.slide-right-exit {
+  position: absolute;
+  transform: translateX(100%);
+  opacity: 0;
+}
+}
+
 
 body {
   margin: 0em;
