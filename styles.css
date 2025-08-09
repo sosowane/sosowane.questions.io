@@ -434,10 +434,14 @@ li:last-child {
   #menu_button {
     top: 2em;
     right: 1em;
-    }
+  }
 
-  #pagewrap .modal-content {
-    width: 85% !important;
+  form {
+      width: 85%;
+  }
+  
+.modal-content {
+    width: 80% !important;
   }
   
   p {
