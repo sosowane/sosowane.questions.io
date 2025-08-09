@@ -98,33 +98,38 @@ document.addEventListener('DOMContentLoaded', function() {
                 qDisplay.classList.add('slide-left-exit');
             }
             
-            // Create a new element for the incoming question
+            // Create container if it doesn't exist
+            let container = qDisplay.parentElement;
+            if (!container.classList.contains('question-container')) {
+                container = document.createElement('div');
+                container.className = 'question-container';
+                qDisplay.parentElement.insertBefore(container, qDisplay);
+                container.appendChild(qDisplay);
+            }
+
+            // Create new question element with transform offset
             const newQuestionEl = document.createElement('div');
-            newQuestionEl.id = 'qDisplay';
+            newQuestionEl.className = 'new-question';
             newQuestionEl.textContent = newQuestion;
             
-            // Copy the current element's computed styles
-            const computedStyle = window.getComputedStyle(qDisplay);
-            newQuestionEl.style.height = computedStyle.height;
-            newQuestionEl.style.top = computedStyle.top;
+            // Position the new question based on swipe direction
+            newQuestionEl.style.transform = `translate3d(${swipeDistance > 0 ? '-' : ''}100%, 0, 0)`;
+            container.appendChild(newQuestionEl);
             
-            // Add the enter animation class
-            newQuestionEl.classList.add(swipeDistance > 0 ? 'slide-right-enter' : 'slide-left-enter');
-            
-            // Insert the new element in the exact same position
-            qDisplay.insertAdjacentElement('afterend', newQuestionEl);
-            
-            // Force browser to acknowledge the new element before animation
+            // Force browser reflow
             void newQuestionEl.offsetWidth;
             
-            // Start the transition
+            // Animate both elements
             requestAnimationFrame(() => {
-                newQuestionEl.classList.remove(swipeDistance > 0 ? 'slide-right-enter' : 'slide-left-enter');
+                qDisplay.style.transform = `translate3d(${swipeDistance > 0 ? '100%' : '-100%'}, 0, 0)`;
+                newQuestionEl.style.transform = 'translate3d(0, 0, 0)';
                 
                 // After animation completes
                 setTimeout(() => {
+                    // Remove old question and promote new question to current
                     qDisplay.remove();
-                    newQuestionEl.classList.remove('slide-right-exit', 'slide-left-exit');
+                    newQuestionEl.id = 'qDisplay';
+                    newQuestionEl.className = '';
                 }, 400);
             });
         }
