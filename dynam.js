@@ -50,6 +50,11 @@ window.onload = function () {
         e.preventDefault();
         hideModal(modal); // Hide main modal first
         showModal(searchModal);
+        // Clear previous results and search
+        searchInput.value = '';
+        searchResults.innerHTML = '';
+        // Focus the search input
+        setTimeout(() => searchInput.focus(), 100);
     }
 
     closeSearch.onclick = function () {
@@ -57,7 +62,6 @@ window.onload = function () {
     }
 
     // Initialize category counts and Question of the Day
-    updateCategoryCounts(categories);
     var searchResults = document.getElementById("searchResults");
 
     // Function to search questions
@@ -71,15 +75,26 @@ window.onload = function () {
             'This or That': thisorthat,
             'Hypothetical Questions': hypo,
             'Show Me Questions': show,
-            'Personal Questions': personal
+            'Personal Questions': personal,
+            'Religion Questions': religion,
+            'Political Questions': politics,
+            'Relationship Questions': relation
         };
 
+        // Don't search if query is empty
+        if (!query.trim()) {
+            return results;
+        }
+
         for (let category in categories) {
-            categories[category].forEach(question => {
-                if (question.toLowerCase().includes(query)) {
-                    results.push({ category, question });
-                }
-            });
+            const questionsArray = categories[category];
+            if (Array.isArray(questionsArray)) {  // Make sure the category exists
+                questionsArray.forEach(question => {
+                    if (question.toLowerCase().includes(query)) {
+                        results.push({ category, question });
+                    }
+                });
+            }
         }
 
         return results;
@@ -124,14 +139,25 @@ window.onload = function () {
     }
 
     // Add search input handler
-    let searchTimeout;
-    searchInput.addEventListener('input', function () {
-        clearTimeout(searchTimeout);
-        searchTimeout = setTimeout(() => {
-            const results = searchQuestions(this.value);
-            displayResults(results);
-        }, 300); // Debounce search for better performance
-    });
+    if (searchInput) {  // Make sure the element exists
+        let searchTimeout;
+        searchInput.addEventListener('input', function() {
+            const query = this.value;
+            clearTimeout(searchTimeout);
+            
+            // Clear results if search is empty
+            if (!query.trim()) {
+                searchResults.innerHTML = '';
+                return;
+            }
+            
+            // Debounce search for better performance
+            searchTimeout = setTimeout(() => {
+                const results = searchQuestions(query);
+                displayResults(results);
+            }, 300);
+        });
+    }
 
     // Handle clicks on modal backgrounds
     document.addEventListener('mousedown', handleModalClick);
