@@ -27,6 +27,10 @@ v3
 }
 
 /* Modal styles */
+.modal-content ul li a[href*="qandhey"] {
+  color: #ffa22b;
+}
+
 .search-container {
   width: 90%;
   margin: 20px auto;
