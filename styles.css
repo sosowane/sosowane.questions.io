@@ -44,6 +44,13 @@ v3
 #searchResults {
   max-height: 400px;
   overflow-y: auto;
+  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+#searchResults::-webkit-scrollbar {
+  display: none;
 }
 
 /* Suggestion form styles */
