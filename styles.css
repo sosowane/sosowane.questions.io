@@ -436,8 +436,8 @@ li:last-child {
     right: 1em;
     }
 
-  .modal-content {
-    width: 65%;
+  #pagewrap .modal-content {
+    width: 85% !important;
   }
   
   p {
