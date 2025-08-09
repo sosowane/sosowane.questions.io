@@ -1,15 +1,15 @@
-window.onload = function(){ 
+window.onload = function () {
     // Main Menu Modal
     var modal = document.getElementById("myModal");
     var btn = document.getElementById("myBtn");
     var span = document.getElementsByClassName("close")[0];
 
-    btn.onclick = function() {
-        modal.style.display = "block";
+    btn.onclick = function () {
+        showModal(modal);
     }
 
-    span.onclick = function() {
-        modal.style.display = "none";
+    span.onclick = function () {
+        hideModal(modal);
     }
 
     // Suggestion Modal
@@ -17,13 +17,14 @@ window.onload = function(){
     var suggestionBtn = document.getElementById("suggestBtn");
     var closesuggestion = document.getElementsByClassName("close-suggestion")[0];
 
-    suggestionBtn.onclick = function(e) {
+    suggestionBtn.onclick = function (e) {
         e.preventDefault();
-        suggestionModal.style.display = "block";
+        hideModal(modal); // Hide main modal first
+        showModal(suggestionModal);
     }
 
-    closesuggestion.onclick = function() {
-        suggestionModal.style.display = "none";
+    closesuggestion.onclick = function () {
+        hideModal(suggestionModal);
     }
 
     // Search Modal
@@ -31,13 +32,26 @@ window.onload = function(){
     var searchBtn = document.getElementById("searchBtn");
     var closeSearch = document.getElementsByClassName("close-search")[0];
     var searchInput = document.getElementById("searchInput");
+
+    searchBtn.onclick = function (e) {
+        e.preventDefault();
+        hideModal(modal); // Hide main modal first
+        showModal(searchModal);
+    }
+
+    closeSearch.onclick = function () {
+        hideModal(searchModal);
+    }
+
+    // Initialize category counts and Question of the Day
+    updateCategoryCounts(categories);
     var searchResults = document.getElementById("searchResults");
 
     // Function to search questions
     function searchQuestions(query) {
         query = query.toLowerCase();
         let results = [];
-        
+
         // Search in all question arrays
         const categories = {
             'Family Questions': family,
@@ -86,19 +100,19 @@ window.onload = function(){
         searchResults.innerHTML = html;
     }
 
-    searchBtn.onclick = function(e) {
+    searchBtn.onclick = function (e) {
         e.preventDefault();
-        searchModal.style.display = "block";
+        showModal(searchModal);
         searchInput.focus();
     }
 
-    closeSearch.onclick = function() {
-        searchModal.style.display = "none";
+    closeSearch.onclick = function () {
+        hideModal(searchModal);
     }
 
     // Add search input handler
     let searchTimeout;
-    searchInput.addEventListener('input', function() {
+    searchInput.addEventListener('input', function () {
         clearTimeout(searchTimeout);
         searchTimeout = setTimeout(() => {
             const results = searchQuestions(this.value);
@@ -107,15 +121,15 @@ window.onload = function(){
     });
 
     // Close modals when clicking outside
-    window.onclick = function(event) {
+    window.onclick = function (event) {
         if (event.target == modal) {
-            modal.style.display = "none";
+            hideModal(modal);
         }
         if (event.target == suggestionModal) {
-            suggestionModal.style.display = "none";
+            hideModal(suggestionModal);
         }
         if (event.target == searchModal) {
-            searchModal.style.display = "none";
+            hideModal(searchModal);
         }
     }
 };
