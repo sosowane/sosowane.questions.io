@@ -7,6 +7,69 @@ just for my friends plz do not take this seriously
 also this is the second verson
 */
 
+/* Header styles */
+.site-title {
+    text-decoration: none;
+    color: #64a1da;
+}
+
+/* Menu button styles */
+#myBtn {
+    position: fixed;
+    top: 4em;
+    right: 5em;
+    width: 55px;
+    height: 55px;
+    background-image: url('bento.png');
+    outline: none;
+    background-color: Transparent;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+/* Modal styles */
+.search-container {
+    width: 90%;
+    margin: 20px auto;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 2px solid #64a1da;
+    border-radius: 5px;
+}
+
+#searchResults {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+/* Suggestion form styles */
+.suggestion-textarea {
+    width: 100%;
+    height: 100px;
+    margin: 10px 0;
+    padding: 8px;
+}
+
+.suggestion-submit {
+    display: block;
+    margin: 10px auto;
+    background-color: #64a1da;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
 
 body{
   margin: 0em;

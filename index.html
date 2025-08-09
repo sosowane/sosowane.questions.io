@@ -19,12 +19,12 @@
 <div id="pagewrap">
 
 <header>
-    <h1><a style= "text-decoration: none; color: #64a1da;" href="index.html">Q&A</a>
+    <h1><a class="site-title" href="index.html">Q&A</a>
     </h1>
     <h2>
         ask away
     </h2>
-    <button id="myBtn" style="position: fixed; top: 4em; right: 5em; width: 55px; height: 55px; background-image: url('bento.png'); outline: none; background-color: Transparent; border: none; cursor:pointer; overflow: hidden;"><img src="bento.png"/></button>
+    <button id="myBtn"><img src="bento.png"/></button>
     
     <!-- The Modal -->
     <div id="myModal" class="modal" >
@@ -46,9 +46,9 @@
         <div class="modal-content">
           <span class="close-search">&times;</span>
           <h3>Search Questions</h3>
-          <div style="margin: 20px 0;">
-            <input type="text" id="searchInput" placeholder="Type to search questions..." style="width: 100%; padding: 10px; margin-bottom: 20px;">
-            <div id="searchResults" style="max-height: 400px; overflow-y: auto;"></div>
+          <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Type to search questions...">
+            <div id="searchResults"></div>
           </div>
         </div>
       </div>
@@ -63,8 +63,8 @@
             <input type="hidden" name="_captcha" value="true">
             <input type="hidden" name="_template" value="table">
             <input type="hidden" name="_next" value="https://sosowane.github.io/sosowane.questions.io/index.html">
-            <textarea name="suggestion" placeholder="Type your question here..." required style="width: 100%; height: 100px; margin: 10px 0; padding: 8px;"></textarea>
-            <button type="submit" style="display: block; margin: 10px auto; background-color: #64a1da; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-family: 'Montserrat', sans-serif; font-size: 16px; transition: background-color 0.3s;">Submit</button>
+            <textarea name="suggestion" class="suggestion-textarea" placeholder="Type your question here..." required></textarea>
+            <button type="submit" class="suggestion-submit">Submit</button>
           </form>
         </div>
       </div>
