@@ -13,6 +13,8 @@
   font-size: 16px;
   outline: none;
   transition: border-color 0.2s;
+  font-family: 'Montserrat', sans-serif;
+  color: #367ec2;
 }
 
 #searchInput:focus {
@@ -41,29 +43,6 @@
 
 #searchResults p:hover {
   background-color: #f0f7ff;
-}
-
-/* Mobile Styles */
-@media screen and (max-width: 768px) {
-  .modal-content {
-    width: 95% !important;
-    margin: 20px auto !important;
-    padding: 15px !important;
-  }
-
-  #searchInput {
-    width: 100% !important;
-    font-size: 16px !important;
-    padding: 12px !important;
-  }
-
-  #searchResults {
-    padding: 5px !important;
-  }
-
-  #searchModal .modal-content {
-    margin-top: 60px !important;
-  }
 }
 
 /* Suggestion Form Button Styles */
