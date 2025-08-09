@@ -233,6 +233,7 @@ html {
   -webkit-tap-highlight-color: transparent;
   max-width: 100%;
   overflow-x: hidden;
+  touch-action: manipulation;
 }
 
 img {
@@ -288,15 +289,16 @@ legend {
 /* Modal Content */
 .modal-content {
   background-color: #F2FBFF;
-  margin: auto;
-  padding: 20px;
   border: 4px solid #80baf0;
   border-radius: 5px;
   width: 60%;
-  justify-items: center;
-  transform: translateY(-20px);
-  opacity: 0;
-  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+  position: relative;
+  margin: 100px auto 0;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease-out;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .modal.show .modal-content {
